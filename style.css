@@ -120,29 +120,22 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-/* Portfolio page */
 }
+/* Portfolio page */
 
     /* Style for the popup container */
-.popup {
-    display: none;
-    position: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-}
 
-/* Style for the popup content */
-.popup-content {
+.center-button {
+    /*button position - center */
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-}
+    top: 22%;
+    transform: translate(168%, 150%);
+  
+    /*button size*/
+    width: 450px;
+    height: 200px;
+    font-size: 60px;
+    background-color: red;
+ 
 
+}
