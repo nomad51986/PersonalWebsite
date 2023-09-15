@@ -1,3 +1,4 @@
+function starttypinganimation(){ // this acts like a classid
 const textLines = [
     "Greetings, Professor Falken",
     "What game would you like to play?",
@@ -36,7 +37,7 @@ function typeText() {
 
 // Start the typing animation
 typeText();
-      
+}
 
 // Game
 // Generate a random 4-digit code
@@ -93,28 +94,10 @@ function checkGuess() {
         document.getElementById('submitGuess').disabled = true;
     }
 }
+//portfolio page
 
-document.addEventListener("DOMContentLoaded", function () {
-    const popupButton = document.getElementById("popupButton");
-    const popup = document.getElementById("popup");
-    const closeButton = document.getElementById("closeButton");
-
-    // Function to show the popup
-    function showPopup() {
-        popup.style.display = "block";
-    }
-
-    // Function to close the popup
-    function closePopup() {
-        popup.style.display = "none";
-    }
-
-    // Event listener for the button click
-    popupButton.addEventListener("click", showPopup);
-
-    // Event listener for the close button click
-    closeButton.addEventListener("click", closePopup);
-});
-
-
-
+const popupButton = document.getElementById("popup");
+function showpopup(){
+    alert("Hello world, You dont listen very well..")
+}
+popupButton.addEventListener("click",showpopup);
