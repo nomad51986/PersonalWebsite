@@ -22,7 +22,7 @@ function typeText() {
             const character = line.charAt(currentCharIndex);
             outputElement.innerHTML += character;
             currentCharIndex++;
-            blinkingLine.style.left = (currentCharIndex * 14) + "px"; // Adjust the position based on font size
+            blinkingLine.style.left = (currentCharIndex * 14) + "px"; 
             setTimeout(typeText, 50);
         } else {
             currentIndex++;
@@ -93,3 +93,28 @@ function checkGuess() {
         document.getElementById('submitGuess').disabled = true;
     }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const popupButton = document.getElementById("popupButton");
+    const popup = document.getElementById("popup");
+    const closeButton = document.getElementById("closeButton");
+
+    // Function to show the popup
+    function showPopup() {
+        popup.style.display = "block";
+    }
+
+    // Function to close the popup
+    function closePopup() {
+        popup.style.display = "none";
+    }
+
+    // Event listener for the button click
+    popupButton.addEventListener("click", showPopup);
+
+    // Event listener for the close button click
+    closeButton.addEventListener("click", closePopup);
+});
+
+
+
