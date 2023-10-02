@@ -61,18 +61,22 @@ nav a:hover {
     /* Set text color to white or any other suitable color */
 }
 
+.homepage {
+    display: grid;
+    grid-template-columns: 50% 50% 50% 50%;
+  
+    
+}
+
 /* Typing animation */
 
 /* Reset default styles for the text container */
 .typing-container {
-    text-align: center;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+      display: flex;
+    justify-content: left;
     /* Align to the top of the container */
-    align-items: center;
-    height: 400px;
+    /* align-items: center; */
+    /* height: ; */
     background-color: none;
     color: #1595db;
     margin: 5px;
@@ -116,10 +120,12 @@ nav a:hover {
 /* Game */
 
 .Game {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+
+
+
+  
+    /* align-items: center; */
 }
 /* Portfolio page */
 
